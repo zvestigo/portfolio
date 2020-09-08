@@ -109,7 +109,7 @@ header,
 .gallery,
 .quote,
 .work, 
-.footer {
+footer {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -301,17 +301,72 @@ header nav ul li a {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
+  padding-top: 15px;
   padding-bottom: 20px;
 }
 
 .gallery h1,
-.gallery .tile-wrapper,
-.gallery .gallery-tile {
+.gallery .tile-wrapper {
   width: 100%;
 }
 
+.gallery h1 {
+  margin-bottom: 10px;
+}
+
+.gallery .tile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.gallery .gallery-tile {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  width: 70%;
+  margin: 20px 0;
+  border: solid 2px #505050;
+  border-radius: 0 30px 0 30px;
+  height: 225px;
+}
+
+.gallery-tile h3 {
+  background: #313131;
+  padding: 5px 10px;
+  border: solid 1px #505050;
+  border-radius: 0 30px 0 30px;
+}
+
+.gallery #tile-1 {
+  background: url(../img/unplugged.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.gallery #tile-2 {
+  background: url(../img/rogue.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.gallery #tile-3 {
+  background: url(../img/jubilee.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.gallery-link {
+  border: solid 2px #e2e3ed;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+
+
 .quote {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .work .content-wrapper {
@@ -320,6 +375,8 @@ header nav ul li a {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .work h1,
@@ -327,11 +384,15 @@ header nav ul li a {
   width: 100%;
 }
 
+.work h1 {
+  margin-bottom: 10px;
+}
+
 .work-column {
   background: url(../img/escheresque_ste.png) repeat;
   background-attachment: fixed;
   border-radius: 30px;
-  margin: 15px;
+  margin: 15px 20px;
   padding: 0 10px;
 }
 
@@ -343,8 +404,36 @@ footer .content-wrapper {
 
 footer .col-2 {
   width: 100%;
+ }
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
+.contact-box input[type=text] {
+  width: 100%;
+  background-color: #505050;
+  color: #e2e3ed;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-box input[type=button] {
+  background: none;
+  color: #e2e3ed;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  border: solid 2px #e2e3ed;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
 
 
 /* ==========================================================================
