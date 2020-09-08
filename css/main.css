@@ -87,13 +87,265 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* --- GENERAL RULES (Mobile First) --- */
+
 html {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  color: #e2e3ed;
 }
 
+body {
+  background: url(../img/escheresque_ste.png) repeat;
+  background-attachment: fixed;
+  
+}
+
+html,
+body,
+header,
+.hero-area,
+.about,
+.gallery,
+.quote,
+.work, 
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+
 .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+h1, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+
+/* --- HEADER AND FOOTER STYLES (Mobile-first) --- */
+
+header .content-wrapper {
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
+
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px darkgray;
+}
+
+.logo-area, nav {
+  width: 100%;
+  flex-flow: nowrap;
+}
+
+.logo,
+.logo-area h2 {
+  padding: 0 1em;
+}
+
+header i {
+  font-size: 2.5em;
+}
+
+.logo-area h2 {
+  text-align: center;
+  font-size: 1.7em;
+  line-height: 1em;
+  margin: 0;
+}
+
+.logo-area h2 span {
+  font-size: .75em;
+}
+
+header nav {
+  display: flex;
+  justify-content: center; 
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 0;
   width: 90%;
 }
+
+header nav ul li {
+  display: flex;
+  opacity: 75%;
+}
+
+header nav ul li a {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* --- HOMEPAGE STYLES (Mobile-first) --- */
+
+.hero-area .content-wrapper {
+  background: url(../img/dariusz-sankowski-3OiYMgDKJ6k-unsplash-darker.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+  align-items: flex-start;
+  border-radius: 30px;
+}
+
+.hero-area h2 {
+  width: 100%;
+  font-size: 3.2em;
+  padding-top: 25px;
+  text-align: left;
+  color: white;
+}
+
+.hero-area .col-2 {
+  width: 100%;
+}
+
+.about .content-wrapper {
+  flex-flow: row wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about .col-2 {
+  width: 100%;
+  justify-content: center;
+}
+
+.about .headshot-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about .headshot {
+  position: cover;
+  width: 70%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.about .headshot img {
+  width: 100%;
+}
+
+.about .socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.about .socials h3 {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.about .social-icons {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about .social-icons p {
+  font-size: 2em;
+  padding: 0 30px;
+  margin: 0;
+}
+
+.gallery .content-wrapper {
+  flex-flow: row wrap;
+  background: url(../img/patrick-fore-bg20VZvrfvY-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding-bottom: 20px;
+}
+
+.gallery h1,
+.gallery .tile-wrapper,
+.gallery .gallery-tile {
+  width: 100%;
+}
+
+.quote {
+  padding: 50px 0;
+}
+
+.work .content-wrapper {
+  flex-flow: row wrap;
+  background: url('../img/michael-oeser-ZdrqJmrXwS4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+}
+
+.work h1,
+.work .work-column {
+  width: 100%;
+}
+
+.work-column {
+  background: url(../img/escheresque_ste.png) repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  margin: 15px;
+  padding: 0 10px;
+}
+
+footer .content-wrapper {
+  flex-flow: row wrap;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+footer .col-2 {
+  width: 100%;
+}
+
+
 
 /* ==========================================================================
    Helper classes
