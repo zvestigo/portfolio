@@ -411,19 +411,19 @@ footer .content-wrapper {
 }
 
 #tile-1 {
-  background: url(../img/unplugged.png);
+  background: url(../img/unplugged-tile.png);
   background-size: cover;
   background-position: top;
 }
 
 #tile-2 {
-  background: url(../img/rogue.png);
+  background: url(../img/rogue-tile.png);
   background-size: cover;
   background-position: top;
 }
 
 #tile-3 {
-  background: url(../img/jubilee.png);
+  background: url(../img/jubilee-tile.png);
   background-size: cover;
   background-position: top;
 }
