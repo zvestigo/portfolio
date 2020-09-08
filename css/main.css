@@ -221,7 +221,7 @@ header nav ul li {
   opacity: 75%;
   padding: 5px 10px;
   border-radius: 30px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 header nav ul li:hover {
@@ -403,6 +403,11 @@ footer .content-wrapper {
   padding: 5px 10px;
   border: solid 1px #505050;
   border-radius: 0 30px 0 30px;
+  transition: 0.3s;
+}
+
+.gallery-tile h3:hover {
+  background: #606060;
 }
 
 #tile-1 {
@@ -606,6 +611,7 @@ footer .content-wrapper {
   header .content-wrapper {
     flex-flow: nowrap;
     justify-content: space-between;
+    padding-left: 0;
   }
 
   .logo-area,
@@ -618,6 +624,10 @@ footer .content-wrapper {
     justify-content: flex-start;
   }
 
+  .logo {
+    padding-left: 0;
+  }
+
   header nav {
     justify-content: flex-end;
   }
@@ -628,6 +638,8 @@ footer .content-wrapper {
 
   footer .content-wrapper {
     align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   #footer-left {
@@ -655,6 +667,7 @@ footer .content-wrapper {
   .about .content-wrapper {
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 50px;
   }
 
   #about-left {
@@ -689,17 +702,18 @@ footer .content-wrapper {
   }
 
   .gallery-tile {
-    width: 50%;
+    width: 51%;
     height: 300px;
   }
 
   .gallery-tile:hover {
     width: 60%;
-    height: 350px; 
+    height: 340px; 
+    margin: 0;
   }
 
   .quote {
-    padding: 90px 0;
+    padding: 95px 0;
   }
 
   .work .content-wrapper {
@@ -731,13 +745,36 @@ footer .content-wrapper {
   } 
   
   .content-wrapper {
-    width: 85%;
+    width: 80%;
   }
 
 
   /* Header & Footer Tablet Styles */
 
   header nav ul {
+    width: 90%;
+  }
+
+
+  /* Homepage Desktop Styles */
+
+  .gallery .tile-wrapper {
+    flex-flow: nowrap;
+    justify-content: space-between;
+  }
+
+  .gallery-tile {
+    width: 31%;
+    height: 300px;
+  }
+
+  .gallery-tile:hover {
+    width: 40%;
+    height: 340px;
+    margin: 0; 
+  }
+
+  .quote h3 {
     width: 90%;
   }
 
