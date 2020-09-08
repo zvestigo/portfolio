@@ -40,7 +40,7 @@
     <div class="content-wrapper">
       <div class="logo-area">
         <div class="logo">
-          <p><i class="fas fa-dragon"></i></p>
+          <p><a href="index.html"><i class="fas fa-dragon"></i></a></p>
         </div>
         <h2>&#60; Zac Vestigo &#62; <br> <span>Web Developer</span></h2> 
       </div>
@@ -65,11 +65,11 @@
   <!-- About -->
   <sectiion class="about">
     <div class="content-wrapper">
-      <div class="col-2">
+      <div class="col-2" id="about-left">
         <h3>Hi there!</h3>
         <p>My name is Zac, and I'm an avid learner based in the greater Boston area. I am passionate about faith, gaming, and all things tech. My journey into the tech field started with learning HTML and CSS as a hobby elementary school, and has progressed most recently as I've added and refined new skills to break into the field professionally. My passion for learning and love for creative problem-solving pushes me to constantly learn new techniques and ways to create.</p>
       </div>
-      <div class="col-2">
+      <div class="col-2" id="about-right">
         <div class="headshot-container">
           <figure class="headshot">
             <img src="img/headshot.jpg" alt="zvestigo headshot">
@@ -92,19 +92,13 @@
       <h1>Recent Projects</h1>
       <div class="tile-wrapper">
         <div class="gallery-tile" id="tile-1">
-          <h3>Unplugged</h3>
-          <p></p>
-          <p class="tile-link"><a href=""></a></p>
+          <a href=""><h3>Unplugged</h3></a>
         </div>
         <div class="gallery-tile" id="tile-2">
-          <h3>Rogue Pickings</h3>
-          <p></p>
-          <p class="tile-link"><a href=""></a></p>
+          <a href=""><h3>Rogue Pickings</h3></a>
         </div>
         <div class="gallery-tile" id="tile-3">
-          <h3>Jubilee Austen</h3>
-          <p></p>
-          <p class="tile-link"><a href=""></a></p>
+          <a href=""><h3>Jubilee Austen</h3></a>
         </div>
       </div>
     <a href="gallery/index.html"><h3 class="gallery-link">See more projects/details &mdash;&#62;</h3></a> 
@@ -123,34 +117,40 @@
     <div class="content-wrapper">
       <h1>My Work</h1>
       <div class="work-column">
-        <p class="fontawesome-icon"></p>
-        <h3>Technical Skills</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Git &amp; Github</li>
-          <li>Mobile-first Development</li>
-        </ul>
+        <div class="work-wrapper">
+          <p class="fontawesome-icon"></p>
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git &amp; Github</li>
+            <li>Mobile-first Development</li>
+          </ul>
+        </div>
       </div>
       <div class="work-column">
-        <p class="fontawesome-icon"></p>
-        <h3>Soft-skills</h3>
-        <ul>
-          <li>Collaborative approach</li>
-          <li>Attention to detail</li>
-          <li>Creative problem-solving</li>
-          <li>Clear communication with designers</li>
-        </ul>
+        <div class="work-wrapper">
+          <p class="fontawesome-icon"></p>
+          <h3>Soft-skills</h3>
+          <ul>
+            <li>Collaborative approach</li>
+            <li>Attention to detail</li>
+            <li>Creative problem-solving</li>
+            <li>Clear communication with designers</li>
+          </ul>
+        </div>
       </div>
       <div class="work-column">
-        <p class="fontawesome-icon"></p>
-        <h3>Services and Characteristics</h3>
-        <ul>
-          <li>Take a visual design and turn it into code for your website</li>
-          <li>Clean, well-organized code for ease in updating</li>
-          <li>Responsive development for websites that are gorgeous on every device</li>
-          <li>Utilize Git and Github for version control</li>
-        </ul>
+        <div class="work-wrapper">
+          <p class="fontawesome-icon"></p>
+          <h3>Services and Characteristics</h3>
+          <ul>
+            <li>Turn a visual design into code for your website</li>
+            <li>Clean, well-organized code for updating ease</li>
+            <li>Responsive development for sites that are gorgeous on every device</li>
+            <li>Utilize version control</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -158,15 +158,15 @@
   <!-- Footer -->
   <footer>
     <div class="content-wrapper">
-      <div class="col-2">
+      <div class="col-2" id="footer-left">
         <h1>Like what you see?</h1>
         <h3>Let me know how I can help you reach your community!</h3>
       </div>
-      <div class="col-2">
+      <div class="col-2" id="footer-right">
         <div class="contact-box">
-          <input type="text" value="Name">
-          <input type="text" value="Email Address">
-          <input type="text" value="Message" id="message">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email Address">
+          <input type="text" placeholder="Message" id="message">
           <input type="button" value="Submit">
         </div>
       </div>

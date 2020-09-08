@@ -126,6 +126,10 @@ footer {
   padding-right: 10px;
 }
 
+.col-2 {
+  width: 100%;
+}
+
 
 h1, h3, h4 {
   font-family: 'Poppins', sans-serif;
@@ -139,7 +143,6 @@ h1 {
 h2 {
   font-family: 'Fredericka the Great', cursive;
   font-weight: 400;
-  font-size: 1.5em;
 }
 
 h3 {
@@ -147,7 +150,7 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.05em;;
 }
 
 a {
@@ -155,6 +158,10 @@ a {
   text-decoration: none;
 }
 
+::placeholder {
+  color: white;
+  opacity: 1;
+}
 
 /* --- HEADER AND FOOTER STYLES (Mobile-first) --- */
 
@@ -170,7 +177,8 @@ header .content-wrapper {
   border-bottom: solid 1px darkgray;
 }
 
-.logo-area, nav {
+.logo-area, 
+nav {
   width: 100%;
   flex-flow: nowrap;
 }
@@ -211,12 +219,62 @@ header nav ul {
 header nav ul li {
   display: flex;
   opacity: 75%;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+header nav ul li:hover {
+  background: #606060;
 }
 
 header nav ul li a {
   font-size: 1.2em;
   text-transform: uppercase;
 }
+
+footer .content-wrapper {
+  flex-flow: row wrap;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.contact-box input[type=text] {
+  width: 100%;
+  background-color: #505050;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  border: solid #202020 1px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px 0;
+  opacity: 65%;
+}
+
+.contact-box input[type=button] {
+  background: none;
+  color: #e2e3ed;
+  font-size: 1.4em;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  border: solid 2px #e2e3ed;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+
+.contact-box input[type=button]:hover {
+  background: #606060;
+}
+
 
 /* --- HOMEPAGE STYLES (Mobile-first) --- */
 
@@ -233,23 +291,15 @@ header nav ul li a {
   width: 100%;
   font-size: 3.2em;
   padding-top: 25px;
+  padding-right: 10%;
   text-align: left;
   color: white;
-}
-
-.hero-area .col-2 {
-  width: 100%;
 }
 
 .about .content-wrapper {
   flex-flow: row wrap;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.about .col-2 {
-  width: 100%;
-  justify-content: center;
 }
 
 .about .headshot-container {
@@ -277,9 +327,16 @@ header nav ul li a {
 }
 
 .about .socials h3 {
-  width: 100%;
   text-align: center;
   margin: 5px 0;
+  border: solid 2px #e2e3ed;
+  border-radius: 30px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.about .socials h3:hover {
+  background: #606060;
 }
 
 .about .social-icons {
@@ -292,7 +349,14 @@ header nav ul li a {
 .about .social-icons p {
   font-size: 2em;
   padding: 0 30px;
-  margin: 0;
+  margin: 5px 5px 0 5px;
+  border: solid 2px #e2e3ed;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.about .social-icons p:hover{
+  background: #606060;
 }
 
 .gallery .content-wrapper {
@@ -301,7 +365,7 @@ header nav ul li a {
   background-size: cover;
   background-position: center;
   border-radius: 30px;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
@@ -321,7 +385,7 @@ header nav ul li a {
   flex-flow: row wrap;
 }
 
-.gallery .gallery-tile {
+.gallery-tile {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -331,6 +395,7 @@ header nav ul li a {
   border: solid 2px #505050;
   border-radius: 0 30px 0 30px;
   height: 225px;
+  transition: 0.3s;
 }
 
 .gallery-tile h3 {
@@ -340,19 +405,19 @@ header nav ul li a {
   border-radius: 0 30px 0 30px;
 }
 
-.gallery #tile-1 {
+#tile-1 {
   background: url(../img/unplugged.png);
   background-size: cover;
   background-position: top;
 }
 
-.gallery #tile-2 {
+#tile-2 {
   background: url(../img/rogue.png);
   background-size: cover;
   background-position: top;
 }
 
-.gallery #tile-3 {
+#tile-3 {
   background: url(../img/jubilee.png);
   background-size: cover;
   background-position: top;
@@ -362,25 +427,31 @@ header nav ul li a {
   border: solid 2px #e2e3ed;
   border-radius: 30px;
   padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.gallery-link:hover {
+  background: #606060;
 }
 
 
 .quote {
   padding: 60px 0;
+  font-style: italic
 }
 
 .work .content-wrapper {
   flex-flow: row wrap;
-  background: url('../img/michael-oeser-ZdrqJmrXwS4-unsplash.jpg');
+  background: url('../img/pexels-fwstudio-163999-darkened.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 30px;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 
 .work h1,
-.work .work-column {
+.work-column {
   width: 100%;
 }
 
@@ -388,52 +459,34 @@ header nav ul li a {
   margin-bottom: 10px;
 }
 
+.work h3 {
+  margin: 15px 0 0 0;
+}
+
+.work ul {
+  margin: 5px 0 16px 0;
+  padding-left: 30px;
+}
+
+.work ul li {
+  color: white;
+}
+
 .work-column {
-  background: url(../img/escheresque_ste.png) repeat;
-  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.work-wrapper {
+  width: 75%;
+  border: solid 2px #e2e3ed;
   border-radius: 30px;
   margin: 15px 20px;
   padding: 0 10px;
 }
 
-footer .content-wrapper {
-  flex-flow: row wrap;
-  padding-top: 30px;
-  padding-bottom: 50px;
-}
 
-footer .col-2 {
-  width: 100%;
- }
-
-.contact-box {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.contact-box input[type=text] {
-  width: 100%;
-  background-color: #505050;
-  color: #e2e3ed;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-style: italic;
-  border: none;
-  border-radius: 30px;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.contact-box input[type=button] {
-  background: none;
-  color: #e2e3ed;
-  font-family: 'Source Sans Pro', sans-serif;
-  text-transform: uppercase;
-  border: solid 2px #e2e3ed;
-  border-radius: 30px;
-  padding: 5px 10px;
-  margin: 10px 0;
-}
 
 
 /* ==========================================================================
@@ -528,9 +581,141 @@ footer .col-2 {
 
   /* ~~~~~~~~~~ TABLET STYLES ~~~~~~~~~~ */
 
-  .content-wrapper {
-    width: 83%;
+  /* General Tablet Styles */
+
+  h1 {
+    font-size: 2.3em;
   }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  .content-wrapper {
+    width: 85%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .col-2 {
+    width: 50%;
+  }
+
+  /* Header & Footer Tablet Styles */
+
+  header .content-wrapper {
+    flex-flow: nowrap;
+    justify-content: space-between;
+  }
+
+  .logo-area,
+  nav {
+    width: 50%;
+  }
+
+  .logo-area {
+    border: none;
+    justify-content: flex-start;
+  }
+
+  header nav {
+    justify-content: flex-end;
+  }
+
+  header nav ul {
+    width: 95%;
+  }
+
+  footer .content-wrapper {
+    align-items: flex-start;
+  }
+
+  #footer-left {
+    font-size: .9em;
+  }
+
+  footer h1 {
+    padding-top: 5px; 
+  }
+
+  footer h3 {
+    width: 90%;
+  }
+
+  .contact-box {
+    margin-top: 25px;
+  }
+
+  /* Homepage Tablet Styles */
+
+  .hero-area h2 {
+    font-size: 4em;
+  }
+
+  .about .content-wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #about-left {
+    flex-basis: 350px;
+    flex-grow: 1;
+  }
+
+  #about-right {
+    flex-basis: 260px;
+    flex-grow: 1;
+  }
+
+  .about .headshot-container {
+    margin-top: 20px;
+
+  }
+
+  .about .headshot {
+    width: 60%;
+  }
+
+  .about .socials {
+    font-size: .7em;
+  }
+
+  .about .socials h3 {
+    margin: 0;
+  }
+
+  .about .social-icons {
+    padding-top: 5px;
+  }
+
+  .gallery-tile {
+    width: 50%;
+    height: 300px;
+  }
+
+  .gallery-tile:hover {
+    width: 60%;
+    height: 350px; 
+  }
+
+  .quote {
+    padding: 90px 0;
+  }
+
+  .work .content-wrapper {
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+  .work-column {
+    width: 31%;
+  }
+
+  .work-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
 
 }
 
@@ -539,9 +724,23 @@ footer .col-2 {
 
   /* ~~~~~~~~~~ DESKTOP STYLES ~~~~~~~~~~ */
 
+  /* General Desktop Styles */
+
+  body {
+    font-size: 1.2em;
+  } 
+  
   .content-wrapper {
-    width: 80%;
+    width: 85%;
   }
+
+
+  /* Header & Footer Tablet Styles */
+
+  header nav ul {
+    width: 90%;
+  }
+
 
 }
 
