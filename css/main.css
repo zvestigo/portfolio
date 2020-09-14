@@ -109,7 +109,9 @@ header,
 .gallery,
 .quote,
 .work, 
-footer {
+footer,
+.gallery-hero,
+main {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -505,6 +507,94 @@ footer .content-wrapper {
 
 
 
+/* --- GALLERY PAGE STYLES (Mobile-first) --- */
+
+.gallery-hero .content-wrapper {
+  background: url(../img/rirri-fdogTkCRHG4-unsplash-effect.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 100px;
+  align-items: center;
+  border-radius: 30px;
+  flex-flow: row wrap;
+}
+
+.gallery-hero h2 {
+  width: 100%;
+  font-size: 3.2em;
+  padding-right: 10%;
+  text-align: left;
+  color: white;
+  margin: 0;
+}
+
+main .content-wrapper {
+  flex-flow: row wrap;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.project {
+  width: 100%;
+  margin: 50px 0 10px 0;
+  padding-bottom: 15px;
+  display: flex; 
+  justify-content: center;
+  flex-flow: wrap;
+  border-bottom: solid 1px darkgray;
+}
+
+.project .content-panel,
+.project .img-panel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.proj-desc {
+  width: 100%;
+  background: url("../img/patrick-fore-bg20VZvrfvY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.proj-desc h1,
+.proj-desc p {
+  width: 100%;
+}
+
+.proj-desc h3 {
+  border: solid 2px #e2e3ed;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 10px 10px;
+  transition: 0.3s;
+}
+
+.proj-desc h3:hover {
+  background: #606060;
+}
+
+.project figure {
+  width: 90%;
+  border: 3px solid #606060;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.project figure img {
+  width: 100%;
+  size: cover;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -748,6 +838,24 @@ footer .content-wrapper {
   }
 
 
+  /* Gallery Page Tablet Styles */
+
+  .gallery-hero .content-wrapper {
+    height: 250px;
+    align-items: flex-start;
+  }
+
+  .gallery-hero h2 {
+    margin-top: 40px;
+    font-size: 4em;
+  }
+
+  .proj-desc {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
 }
 
 
@@ -802,6 +910,38 @@ footer .content-wrapper {
   .quote h3 {
     width: 90%;
   }
+
+
+  
+  /* Gallery Page Desktop Styles */
+
+  .project {
+    display: flex;
+    flex-flow: nowrap;
+    font-size: .9em;
+  }
+  
+  .content-panel, 
+  .img-panel {
+    width: 45%;
+    display: flex;
+    align-items: center;
+  }
+
+  .img-left .content-panel {
+    order: 2;
+  }
+
+  .img-left .img-panel {
+    order: 1;
+  }
+
+
+  .project figure {
+    width: 90%;
+  }
+
+
 
 
 }
