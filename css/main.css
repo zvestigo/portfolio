@@ -318,7 +318,7 @@ footer .content-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  max-width: 550px;
+  max-width: 500px;
 }
 
 .about .headshot {
@@ -541,7 +541,7 @@ main .content-wrapper {
   display: flex; 
   justify-content: center;
   flex-flow: wrap;
-  border-bottom: solid 1px darkgray;
+  border-bottom: solid 1px #606060;
 }
 
 .project .content-panel,
